@@ -1,0 +1,32 @@
+{
+  "name": "nuharc",
+  "version": "0.0.1",
+  "description": "Cli for node-uharc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghaschel/nuharc.git"
+  },
+  "keywords": [
+    "compression",
+    "cli",
+    "command",
+    "line",
+    "uharc",
+    "zip",
+    "kgb",
+    "winuha"
+  ],
+  "author": "Guilherme Haschel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghaschel/nuharc/issues"
+  },
+  "homepage": "https://github.com/ghaschel/nuharc#readme",
+  "dependencies": {
+    "node-uharc": "0.0.9"
+  }
+}
