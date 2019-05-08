@@ -27,6 +27,9 @@
   },
   "homepage": "https://github.com/ghaschel/nuharc#readme",
   "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "inquirer": "^6.3.1",
     "node-uharc": "0.0.9"
   }
 }
