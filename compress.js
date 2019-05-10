@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const nodeUharc = require('node-uharc');
-const defaults = require('./defaults.js');
+const defaults = require('./defaults.json');
 
 const compress = () => {
   inquirer.prompt([

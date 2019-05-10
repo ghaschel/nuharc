@@ -30,6 +30,6 @@
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "inquirer": "^6.3.1",
-    "node-uharc": "0.0.9"
+    "node-uharc": "1.0.0"
   }
 }
