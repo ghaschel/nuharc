@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 const inquirer = require('inquirer');
 const program = require('commander');
 const pjson = require('./package.json');
@@ -19,9 +20,22 @@ program
       output: './opt.uha',
       compressionMode: 'LZP'
     }
-    console.log(config)
     nodeUharc(config);
   });
+
+program
+  .command('extract')
+  .alias('x')
+  .description('Extract a file to an output folder')
+  .action(() => {
+    const config = {
+      ...defaults.extract,
+      files: './opt.uha',
+      output: './opt'
+    }
+    nodeUharc(config)
+  });
+
 
 if (process.argv[2]) {
   program.parse(process.argv);
