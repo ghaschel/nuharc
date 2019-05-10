@@ -2,8 +2,9 @@ const inquirer = require('inquirer');
 const program = require('commander');
 const pjson = require('./package.json');
 const nodeUharc = require('node-uharc');
-const defaults = require('./defaults.js');
+const defaults = require('./defaults.json');
 const compress = require('./compress.js').compress;
+const extract = require('./extract.js').extract;
 
 program.version(pjson.version).description('Node uharc');
 
@@ -18,6 +19,7 @@ program
       output: './opt.uha',
       compressionMode: 'LZP'
     }
+    console.log(config)
     nodeUharc(config);
   });
 
@@ -40,7 +42,7 @@ if (process.argv[2]) {
     if (answers.option === 'add') {
       compress();
     } else {
-      //extract()
+      extract()
     }
   });
 }

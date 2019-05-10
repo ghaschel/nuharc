@@ -1,0 +1,14 @@
+{
+  "add": {
+   "action": "compress",
+   "headerEncryption": true,
+   "recursive": true,
+   "clearFileArchiceAttr": true,
+   "multimediaCompression": true
+  },
+  "extract": {
+    "action": "extract",
+    "files": "./bin/opt.uha",
+    "output": "../tst"
+  }
+}
