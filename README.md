@@ -7,6 +7,9 @@ This is a cli for [node-uharc](https://github.com/ghaschel/node-uharc) with the 
 
 ### How to use:
 `nuharc` then follow the on-screen choices
+
 or
+
 `nuharc a` to compress all files and directories in the current directory recursively to a file named `opt.uha`
+
 `nuharc x` to extract the `opt.uha` file present in the current directory to a `opt` folder.
